@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog it</title>
+    <link href="./style/form.css" rel="styleSheet">
+</head>
+<body>
+    <header>
+        Blog it
+    </header>
+    <div class="container">
+        <form action="/" method="POST">
+            <% if (locals.title && locals.body) { %>
+                <input type="text" name="title" value="<%= title %>" placeholder="Title" id="title" required>
+                <textarea name="body" placeholder="Enter text" id="body" style="resize: none;" required><%= body %>
+                </textarea>
+                
+            <% } else { %>
+            <input type="text" name="title" placeholder="Title" id="title" required>
+            <textarea name="body" placeholder="Enter text" id="body" style="resize: none;" required></textarea>
+            <% } %>
+            <div class="submit">
+                <input type="submit" value="Publish" id="button">
+            </div>
+        </form>
+    </div>
+    <script>
+        console.log(body);
+    </script>
+    </body>
+</html>

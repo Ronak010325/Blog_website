@@ -1,0 +1,73 @@
+body {
+    width: fit-content;
+    padding:1px 0;
+    height: fit-content;
+}
+
+.aboutus {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.13);
+    padding: 20px;
+    border-radius: 20px;
+    gap:25px;
+}
+
+.line {
+    margin-bottom: 15px;
+}
+
+.out {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.heading{
+    font-size: 3rem;
+    margin: 10px 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.content {
+    font-size: 1.7rem;
+    margin-top: 10px;
+    font-family: "Roboto Slab", serif;
+}
+
+.web_name{
+    color: orangered;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media(max-width : 836px) {
+    body{
+        padding: 1px 0;
+    }
+
+    .aboutus {
+        gap: 0;
+    }
+
+    .aboutus .heading {
+        font-size: 1.5rem;
+    }
+
+    .web_name {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .content {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .content span {
+        font-size: 1.5rem;
+    }
+}
